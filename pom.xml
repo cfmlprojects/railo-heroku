@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>railo.heroku</groupId>
+	<artifactId>railo.heroku</artifactId>
+	<packaging>war</packaging>
+	<version>0.1.1</version>
+	<name>Railo Heroku</name>
+
+	<parent>
+		<groupId>org.getrailo</groupId>
+		<artifactId>railo.pomparent.jetty</artifactId>
+		<version>4.0.1.001</version> 
+		<!-- 
+		<version>3.3.3.001</version>
+		-->
+	</parent>
+	
+	<repositories>
+		<repository>
+			<id>cfmlprojects</id>
+			<url>http://cfmlprojects.org/artifacts/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<warSourceDirectory>heroku</warSourceDirectory>
+					<!-- <webXml>heroku/WEB-INF/web.xml</webXml>  -->
+					<webResources>
+						<resource>
+							<!-- this is relative to the pom.xml directory -->
+							<directory>src</directory>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
