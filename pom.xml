@@ -17,8 +17,8 @@
 	</parent>
 	<repositories>
 		<repository>
-			<id>cfdistros.repo.local</id>
-			<url>file:///Users/valliant/cfdistro/artifacts/</url>
+			<id>cfmlprojects</id>
+			<url>http://cfmlprojects.org/artifacts</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
