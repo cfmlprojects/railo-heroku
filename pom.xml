@@ -9,17 +9,16 @@
 
 	<parent>
 		<groupId>org.getrailo</groupId>
-		<artifactId>railo.pomparent.jetty</artifactId>
-		<version>4.0.1.001</version> 
+		<artifactId>railo.pomparent.winstone</artifactId>
+		<version>4.1.0.004</version> 
 		<!-- 
 		<version>3.3.3.001</version>
 		-->
 	</parent>
-	
 	<repositories>
 		<repository>
-			<id>cfmlprojects</id>
-			<url>http://cfmlprojects.org/artifacts/</url>
+			<id>cfdistros.repo.local</id>
+			<url>file:///Users/valliant/cfdistro/artifacts/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
