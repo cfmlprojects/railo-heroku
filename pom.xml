@@ -6,14 +6,13 @@
 	<packaging>war</packaging>
 	<version>0.1.1</version>
 	<name>Railo Heroku</name>
-
 	<parent>
 		<groupId>org.getrailo</groupId>
-		<artifactId>railo.pomparent.winstone</artifactId>
-		<version>4.1.0.004</version> 
+		<artifactId>railo.pomparent.heroku.winstone</artifactId>
 		<!-- 
-		<version>3.3.3.001</version>
-		-->
+		<artifactId>railo.pomparent.heroku.jetty</artifactId>
+		 -->
+		<version>4.1.0.004</version> 
 	</parent>
 	<repositories>
 		<repository>
@@ -27,7 +26,6 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -47,5 +45,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
