@@ -12,7 +12,7 @@
 		<!-- 
 		<artifactId>railo.pomparent.heroku.jetty</artifactId>
 		 -->
-		<version>4.1.0.004</version> 
+		<version>4.1.0.005</version> 
 	</parent>
 	<repositories>
 		<repository>
@@ -35,12 +35,14 @@
 				<configuration>
 					<warSourceDirectory>heroku</warSourceDirectory>
 					<!-- <webXml>heroku/WEB-INF/web.xml</webXml>  -->
+					<!-- webResources are relative to the pom.xml directory -->
+					<!-- There is a mapping now, see: WEB-INF/railo/railo-web.xml.cfm
 					<webResources>
 						<resource>
-							<!-- this is relative to the pom.xml directory -->
 							<directory>src</directory>
 						</resource>
 					</webResources>
+					-->
 				</configuration>
 			</plugin>
 		</plugins>
